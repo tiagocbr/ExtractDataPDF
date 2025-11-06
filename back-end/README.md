@@ -38,7 +38,7 @@ venv\Scripts\Activate.ps1
 ```bash
 python -m venv venv
 ```
-4. ** Atualize o pip**
+4. **Atualize o pip**
 ```bash
   python -m pip install --upgrade pip
 ```
@@ -54,6 +54,7 @@ pip install -r requirements.txt
 ```bash
 python -m uvicorn app.main:app --reload
 ```
+
 
 
 
