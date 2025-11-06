@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // Adicione esta linha se ainda não estiver presente
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/public/*": [
+        "public/*"
+      ] // Corrigido
+    }
+  }
+}

@@ -1,0 +1,25 @@
+:root {
+  --background: #0B0B0C; /* fundo escuro padrão */
+  --foreground: #EDEDED; /* texto padrão */
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background); /* mantém fundo escuro */
+  color: var(--foreground); /* mantém texto claro */
+  font-family: 'Barlow', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

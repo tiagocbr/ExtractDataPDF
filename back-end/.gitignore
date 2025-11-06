@@ -1,0 +1,98 @@
+# =========================================================
+# 🐍 PYTHON
+# =========================================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Compiled C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =========================================================
+# 🧰 CONFIG / SECRETS
+# =========================================================
+# Environment variables
+.env
+
+# Local settings
+*.local.json
+*.config
+
+# =========================================================
+# 📦 DEPENDENCIES / IDE FILES
+# =========================================================
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# PyCharm
+*.iml
+*.ipr
+*.iws
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# =========================================================
+# 🧾 PDFs / TEMP FILES
+# =========================================================
+# Sample and temporary PDFs
+data/samples/
+data/tmp/
+*.pdf
+
+# Cache / Pickle / Temp data
+.cache/
+*.pkl
+*.tmp
+*.bak
+
+# =========================================================
+# ⚙️ TESTS / NOTEBOOKS
+# =========================================================
+# Pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# =========================================================
+# 🧠 OPENAI / API CREDENTIALS
+# =========================================================
+# Never commit keys or token files
+openai_key.txt
+*.secret
