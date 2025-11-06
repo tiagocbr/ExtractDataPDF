@@ -48,12 +48,13 @@ pip install -r requirements.txt
 ```
 
 ## Variáveis de Ambiente
-- Crie um arquivo .env e configure a variável de ambiente OPENAI_API_KEY com sua chave da OpenAI no arquivo
+- Crie um arquivo .env dentro da pasta raiz back-end e configure a variável de ambiente OPENAI_API_KEY com sua chave da OpenAI no arquivo
 
 ## Executando o Servidor
 ```bash
 python -m uvicorn app.main:app --reload
 ```
+
 
 
 
