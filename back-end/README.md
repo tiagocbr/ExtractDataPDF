@@ -13,13 +13,14 @@ Este é o backend da aplicação de **extração estruturada de PDFs**, implemen
 ---
 
 ## Configuração do Ambiente
+1. **Navegar até a pasta do back-end**
 
-1. **Criar um ambiente virtual**
+2. **Criar um ambiente virtual**
 
 ```bash
 python -m venv venv
 ```
-2. **Ativar o ambiente virtual**
+3. **Ativar o ambiente virtual**
 
 - Linux/macOS
 ```bash
@@ -38,7 +39,7 @@ venv\Scripts\Activate.ps1
 python -m venv venv
 ```
 
-3. **Instalar as Dependências**
+4. **Instalar as Dependências**
 ```bash
 pip install -r requirements.txt
 ```
@@ -50,4 +51,5 @@ pip install -r requirements.txt
 ```bash
 python -m uvicorn app.main:app --reload
 ```
+
 
