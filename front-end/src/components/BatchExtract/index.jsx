@@ -46,6 +46,8 @@ export default function BatchExtract({setSnackbar}) {
   });
   const [page, setPage] = useState(1);
 
+  const API_URL = process.env.NEXT_PUBLIC_API;
+
   const concurrency = 5; // número de requisições simultâneas
   const resultsPerPage = 1; // quantos resultados exibir por página
 
@@ -106,7 +108,7 @@ export default function BatchExtract({setSnackbar}) {
         formData.append("pdf", pdfFile);
 
         try {
-          const res = await fetch("http://localhost:8000/api/extract", {
+          const res = await fetch(`${API_URL}/api/extract`, {
             method: "POST",
             body: formData,
           });

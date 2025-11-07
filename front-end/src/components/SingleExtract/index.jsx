@@ -10,6 +10,8 @@ import {
   Stack,
 } from "@mui/material";
 
+const API_URL = process.env.NEXT_PUBLIC_API;
+
 export default function SingleExtract({setSnackbar}) {
   const [label, setLabel] = useState("");
   const [schema, setSchema] = useState("");
@@ -34,7 +36,7 @@ export default function SingleExtract({setSnackbar}) {
       formData.append("extraction_schema", schema);
       formData.append("pdf", pdf);
 
-      const res = await fetch("http://localhost:8000/api/extract", {
+      const res = await fetch(`${API_URL}/api/extract`, {
         method: "POST",
         body: formData,
       });
