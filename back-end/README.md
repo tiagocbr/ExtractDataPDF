@@ -1,20 +1,35 @@
-# Backend - Extração de PDFs
+## 🧠 Backend — Extração Estruturada de PDFs
 
-Este é o backend da aplicação de **extração estruturada de PDFs**, implementado em Python com FastAPI e Uvicorn. Ele expõe um endpoint para receber PDFs, schemas e labels, realizando a extração de dados de forma eficiente.
+Este repositório contém o backend da aplicação de extração de informações estruturadas a partir de arquivos PDF.
+A API é construída com FastAPI e executada com Uvicorn, oferecendo um endpoint capaz de processar PDFs com schemas e labels definidos dinamicamente.
 
----
+## 🚀 Tecnologias Utilizadas
 
-## Pré-requisitos
+Python 3.10+
 
-- Python >= 3.10
-- pip
-- Sistema operacional compatível (Linux, macOS, Windows)
+FastAPI — framework web assíncrono e performático
 
----
+Uvicorn — servidor ASGI leve e rápido
+
+Pydantic — validação e tipagem de dados
+
+python-dotenv — gerenciamento de variáveis de ambiente
+
+## ⚙️ Pré-requisitos
+
+Antes de iniciar, certifique-se de ter instalado:
+
+Python 3.10 ou superior
+
+pip (gerenciador de pacotes do Python)
+
+Sistema operacional compatível (Linux, macOS ou Windows)
 
 ## Configuração do Ambiente
 1. **Navegar até a pasta do back-end**
-
+```bash
+cd back-end
+```
 2. **Criar um ambiente virtual**
 
 ```bash
@@ -48,12 +63,20 @@ pip install -r requirements.txt
 ```
 
 ## Variáveis de Ambiente
-- Crie um arquivo .env dentro da pasta raiz back-end e configure a variável de ambiente OPENAI_API_KEY com sua chave da OpenAI no arquivo
+Crie um arquivo chamado .env na raiz do projeto backend e adicione sua chave da OpenAI:
+```bash
+OPENAI_API_KEY=your-openai-api-key
+```
+
 
 ## Executando o Servidor
 ```bash
 python -m uvicorn app.main:app --reload
 ```
+A API estará disponível em:
+👉 http://localhost:8000
+
+
 
 
 
