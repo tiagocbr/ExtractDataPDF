@@ -1,7 +1,7 @@
 from cachetools import TTLCache
 import hashlib
 
-cache = TTLCache(maxsize=1000, ttl=600)
+cache = TTLCache(maxsize=1000, ttl=86400)
 
 def get_from_cache(key):
     return cache.get(key)
