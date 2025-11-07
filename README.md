@@ -8,6 +8,23 @@ A arquitetura combina **backend inteligente** e **frontend com paralelização c
 
 ---
 
+### 🚀 URLs de Produção
+
+**Frontend (interface web):**  
+Acesse a aplicação pelo navegador:  
+[https://extract-data-pdf-wine.vercel.app/](https://extract-data-pdf-wine.vercel.app/)
+
+**Backend (API / endpoint):**  
+Para enviar requisições diretamente à API:  
+[https://extractdatapdf.onrender.com](https://extractdatapdf.onrender.com)
+
+### ⚠️ Observação sobre performance em produção
+
+Em produção, o processamento de PDFs pode levar **um pouco mais de tempo** do que localmente, porque a aplicação está hospedada em **Vercel (frontend) e Render (backend)** usando planos gratuitos.  
+Isso significa que a inicialização do servidor e a resposta das requisições podem ser mais lentas do que em um ambiente local.
+
+
+
 ## Desafios Mapeados e Soluções
 
 ### 1. Evitar retrabalho e reduzir custo de processamento
